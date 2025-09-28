@@ -68,12 +68,15 @@ The API allows you to:
 2. **Single Station - Single Date(/api/v1/<station>/<date>)**
 * Fetches the temperature of one station on a given date.
 * **Example:**
-*   http://127.0.0.1:5000/api/v1/10/1988-10-25
+*     http://127.0.0.1:5000/api/v1/10/1988-10-25
 * **Response:**
-*   {  "station": "10",
-       "date": "1988-10-25",
-       "temperature": 14.5
-    }
+* {
+  "station": "10",
+
+  "date": "1988-10-25",
+
+  "temperature": 14.5
+  }
 
 3. **Single Station - All Records**
 
