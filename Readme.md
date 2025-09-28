@@ -16,7 +16,7 @@ The API allows you to:
 
 ├── **templates**/
 
-    │└── **home.html** # Homepage template rendered with Jinja2
+    └── **home.html** # Homepage template rendered with Jinja2
 
 ├── **data_small**/ # Dataset directory
 
@@ -44,9 +44,9 @@ The API allows you to:
 
 * Frontend landing page of the API.
 * Shows:
-*     Project title
-*     Example API usage
-*     Table of available stations (rendered via stations.to_html())
+    * Project title
+    * Example API usage
+    * Table of available stations (rendered via stations.to_html())
 
 3. **data_small/**
 
@@ -56,29 +56,25 @@ The API allows you to:
 * **TG_STAIDxxxxx.txt (one per station)**
 *     Contains daily weather observations.
 *     Columns:
-*         DATE → Date of observation (YYYY-MM-DD)
-*         TG → Mean temperature (tenths of °C, converted to °C in API)
+        * DATE → Date of observation (YYYY-MM-DD)
+        * TG → Mean temperature (tenths of °C, converted to °C in API)
 
 ## 🌐 API Endpoints
 
-1. **Homepage**
-
-http://127.0.0.1:5000/
+1. **Homepage(http://127.0.0.1:5000/)**
 * Displays list of stations in HTML format.
 * Provides examples of API usage.
 
-2. **Single Station - Single Date**
-
-(/api/v1/<station>/<date>)
+2. **Single Station - Single Date(/api/v1/<station>/<date>)**
 * Fetches the temperature of one station on a given date.
 * **Example:**
-    http://127.0.0.1:5000/api/v1/10/1988-10-25
+*   http://127.0.0.1:5000/api/v1/10/1988-10-25
 * **Response:**
-    {
-        "station": "10",
-        "date": "1988-10-25",
-        "temperature": 14.5
-    }
+*   {
+*       "station": "10",
+*        "date": "1988-10-25",
+*        "temperature": 14.5
+*    }
 
 3. **Single Station - All Records**
 
