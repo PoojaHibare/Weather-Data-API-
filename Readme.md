@@ -12,18 +12,21 @@ The API allows you to:
 
 ## 📂 Project Structure
 
-├── **main.py**                     # Flask application (API logic)
+├── **main.py**  # Flask application (API logic)
 
 ├── **templates**/
-│   └── **home.html**               # Homepage template rendered with Jinja2
 
-├── **data_small**/                 # Dataset directory
-│   ├── **stations.txt**            # List of all weather stations
-│   └── **TG_STAIDxxxxx.txt**       # Daily temperature data for each station
+│   └── **home.html** # Homepage template rendered with Jinja2
 
-├── **.gitignore**                  # Ignore unnecessary files
+├── **data_small**/ # Dataset directory
 
-└── **README.md**                   # Project documentation
+│   ├── **stations.txt** # List of all weather stations
+
+│   └── **TG_STAIDxxxxx.txt** # Daily temperature data for each station
+
+├── **.gitignore** # Ignore unnecessary files
+
+└── **README.md** # Project documentation
 
 ## 🔑 Components
 
@@ -32,10 +35,10 @@ The API allows you to:
 * Entry point of the application.
 * Uses **Flask** for API routing and **Pandas** for data handling.
 * Defines endpoints for:
-*     Homepage (station info)
-*     Temperature lookup by station/date
-*     All records for a station
-*     Year-wise records
+     * Homepage (station info)
+     * Temperature lookup by station/date
+     * All records for a station
+     * Year-wise records
 
 2. **templates/home.html**
 
