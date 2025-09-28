@@ -16,13 +16,13 @@ The API allows you to:
 
 ├── **templates**/
 
-    └── **home.html** # Homepage template rendered with Jinja2
+│└── **home.html** # Homepage template rendered with Jinja2
 
 ├── **data_small**/ # Dataset directory
 
-    │├── **stations.txt** # List of all weather stations
+│├── **stations.txt** # List of all weather stations
 
-    │└── **TG_STAIDxxxxx.txt** # Daily temperature data for each station
+│└── **TG_STAIDxxxxx.txt** # Daily temperature data for each station
 
 ├── **.gitignore** # Ignore unnecessary files
 
@@ -52,10 +52,10 @@ The API allows you to:
 
 * Contains raw data files.
 * **stations.txt**
-*     Provides station IDs (STAID) and names (STANAME).
+     * Provides station IDs (STAID) and names (STANAME).
 * **TG_STAIDxxxxx.txt (one per station)**
-*     Contains daily weather observations.
-*     Columns:
+    * Contains daily weather observations.
+    * Columns:
         * DATE → Date of observation (YYYY-MM-DD)
         * TG → Mean temperature (tenths of °C, converted to °C in API)
 
@@ -71,9 +71,9 @@ The API allows you to:
 *   http://127.0.0.1:5000/api/v1/10/1988-10-25
 * **Response:**
 *   {
-*       "station": "10",
-*        "date": "1988-10-25",
-*        "temperature": 14.5
+       "station": "10",
+        "date": "1988-10-25",
+         "temperature": 14.5
 *    }
 
 3. **Single Station - All Records**
