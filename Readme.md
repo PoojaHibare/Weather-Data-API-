@@ -98,13 +98,11 @@ The API allows you to:
   
       ]
 
-4. **Yearly Data(/api/v1/yearly/<station>/<year>)**
-   
-Fetches all temperature records for a station within a specific year.
-
-**Example:**
-    http://127.0.0.1:5000/api/v1/yearly/10/1990
-**Response:**
+4. **Yearly Data(/api/v1/yearly/<station>/<year>)**  
+* Fetches all temperature records for a station within a specific year.
+* **Example:**
+*    http://127.0.0.1:5000/api/v1/yearly/10/1990
+* **Response:**
 *    [
     
         {"DATE": "1990-01-01", "TG": 15},
@@ -112,7 +110,7 @@ Fetches all temperature records for a station within a specific year.
         {"DATE": "1990-01-02", "TG": 16},
 
          ...
-    
+     
     ]
 
 
@@ -133,9 +131,9 @@ The dataset consists of station **metadata and temperature** records:
 * Example raw data snippet:
 
 *     DATE      TG
-     19880101  25
-     19880102  27
-     19880103  -5
+*     19880101  25
+*     19880102  27
+*     19880103  -5
 
 ## 🖥️ Homepage Preview
 
