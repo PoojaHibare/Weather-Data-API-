@@ -16,13 +16,13 @@ The API allows you to:
 
 ├── **templates**/
 
-│   └── **home.html** # Homepage template rendered with Jinja2
+    │└── **home.html** # Homepage template rendered with Jinja2
 
 ├── **data_small**/ # Dataset directory
 
-│   ├── **stations.txt** # List of all weather stations
+    │├── **stations.txt** # List of all weather stations
 
-│   └── **TG_STAIDxxxxx.txt** # Daily temperature data for each station
+    │└── **TG_STAIDxxxxx.txt** # Daily temperature data for each station
 
 ├── **.gitignore** # Ignore unnecessary files
 
