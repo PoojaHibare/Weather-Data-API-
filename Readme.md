@@ -12,21 +12,21 @@ The API allows you to:
 
 ## 📂 Project Structure
 
-├── **main.py**  # Flask application (API logic)
+├── **main.py**             # Flask application (API logic)
 
 ├── **templates**/
 
-│└── **home.html** # Homepage template rendered with Jinja2
+│└── **home.html**          # Homepage template rendered with Jinja2
 
-├── **data_small**/ # Dataset directory
+├── **data_small**/         # Dataset directory
 
-│├── **stations.txt** # List of all weather stations
+│├── **stations.txt**       # List of all weather stations
 
-│└── **TG_STAIDxxxxx.txt** # Daily temperature data for each station
+│└── **TG_STAIDxxxxx.txt**  # Daily temperature data for each station
 
-├── **.gitignore** # Ignore unnecessary files
+├── **.gitignore**          # Ignore unnecessary files
 
-└── **README.md** # Project documentation
+└── **README.md**           # Project documentation
 
 ## 🔑 Components
 
@@ -70,11 +70,10 @@ The API allows you to:
 * **Example:**
 *   http://127.0.0.1:5000/api/v1/10/1988-10-25
 * **Response:**
-*   {
-       "station": "10",
-        "date": "1988-10-25",
-         "temperature": 14.5
-*    }
+*   {  "station": "10",
+       "date": "1988-10-25",
+       "temperature": 14.5
+    }
 
 3. **Single Station - All Records**
 
